@@ -3,6 +3,16 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-03-01T11:44:28.053256282Z"
+    description: A Helm chart for Kubernetes
+    digest: cf2ea1b3d3178ec98d53ea5d57c5130f8b6c88846c6624ed45f094b2ebcc74b3
+    name: helm-chart-test
+    type: application
+    urls:
+    - https://github.com/jcode-hub/helm-chart/releases/download/helm-chart-test-0.4.0/helm-chart-test-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2022-03-01T12:36:59.011991937+01:00"
     description: A Helm chart for Kubernetes
     digest: 4082d1869038829d4b31caa6f2030faa17d7fad472bdb5f2899ab2180c2b9fea
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://jcode-hub.github.io/helm-chart/helm-chart-test-0.3.0.tgz
     version: 0.3.0
-generated: "2022-03-01T12:36:59.011487029+01:00"
+generated: "2022-03-01T11:44:28.053264883Z"
