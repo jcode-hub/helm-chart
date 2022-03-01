@@ -1,0 +1,24 @@
+name: Deploy
+# on: ['deployment']
+# on: ['push']
+on:
+  push:
+    branches:
+      - test
+
+jobs:
+  deployment:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: 'Deploy'
+        uses: 'deliverybot/helm@v1'
+        with:
+          release: helm-test 
+          namespace: 'sternium'
+          chart: 'helm-chart-test'
+          token: '${{ github.token }}'
+          value-files: 'values.yaml'
+        env:
+          KUBECONFIG_FILE: '${{ secrets.KUBECONFIG }}'
