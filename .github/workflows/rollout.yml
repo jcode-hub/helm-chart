@@ -17,6 +17,7 @@ jobs:
         uses: glopezep/helm@v1.7.1
         with:
           release: helm-test 
+          helm: helm3
           namespace: 'sternium'
           chart: 'helm-chart-test'
           token: '${{ github.token }}'
