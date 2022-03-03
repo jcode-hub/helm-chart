@@ -347,7 +347,7 @@ async function run() {
         );
       }
 
-      addRepoArgs.push(repository_alias, repository);
+      addRepoArgs.push(repository);
 
       await exec.exec(helm, addRepoArgs);
 
