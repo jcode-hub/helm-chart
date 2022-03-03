@@ -15,7 +15,8 @@ jobs:
       - name: 'Deploy'
         # uses: 'deliverybot/helm@v1'
         # uses: glopezep/helm@v1.7.1
-        uses: elseu/sdu-helm-deploy-action@0.0.9
+        # uses: elseu/sdu-helm-deploy-action@0.0.9
+        uses: ./.github/actions/sdu-helm-deploy-action-master
         with:
           release: helm-test 
           helm: helm3
@@ -25,4 +26,4 @@ jobs:
           token: '${{ github.token }}'
           value-files: 'helm-chart-sources/helm-chart-test/values.yaml'
         env:
-          KUBECONFIG_BASE64: '${{ secrets.KUBECONFIG }}'
+          KUBECONFIG_BASE64: '${{ secrets.KUBECONFIG }}' #| base64
