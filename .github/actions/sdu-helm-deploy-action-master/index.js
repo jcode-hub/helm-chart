@@ -333,7 +333,7 @@ async function run() {
 
     core.debug(`env: KUBECONFIG="${process.env.KUBECONFIG}"`);
 
-    if (repository) {
+    if (repository != "") {
       console.log('fooooooooooooooooooooooooo');
       core.info('Add repository');
       const addRepoArgs = ['repo', 'add'];
