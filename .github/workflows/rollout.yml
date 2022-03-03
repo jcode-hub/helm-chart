@@ -20,7 +20,7 @@ jobs:
         with:
           release: helm-test 
           helm: helm3
-          repository: https://jcode-hub.github.io/helm-chart
+          repository: 'https://jcode-hub.github.io/helm-chart'
           namespace: 'hello-world'
           chart: 'helm-chart-test'
           token: '${{ github.token }}'
